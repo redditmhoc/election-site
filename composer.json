@@ -1,8 +1,8 @@
 {
-    "name": "laravel/laravel",
+    "name": "redditmhoc/elections",
     "type": "project",
-    "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "description": "/r/MHOC elections archive",
+    "keywords": ["framework", "laravel", "mhoc"],
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
@@ -12,6 +12,8 @@
         "laravel/tinker": "^2.7"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.7",
+        "barryvdh/laravel-ide-helper": "^2.12",
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.0.1",
