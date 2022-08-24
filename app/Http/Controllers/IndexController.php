@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Inertia\Inertia;
-
 class IndexController extends Controller
 {
-    public function index()
+    public function __invoke()
     {
-        return "Test";
+        return view('index');
     }
 }

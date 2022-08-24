@@ -7,17 +7,17 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up()
     {
-        Schema::create('regional_constituencies', function (Blueprint $table) {
-            $table->id();
-
-
-
+        Schema::create('regions', function (Blueprint $table) {
+            $table->uuid('id')->primary()->default(Str::uuid());
+            $table->string('name');
+            $table->string('slug');
+            $table->text('banner_url')->nullable();
             $table->timestamps();
         });
     }
 
     public function down()
     {
-        Schema::dropIfExists('regional_constituencies');
+        Schema::dropIfExists('regions');
     }
 };
